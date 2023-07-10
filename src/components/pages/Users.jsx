@@ -29,13 +29,16 @@ const user = {
 };
 
 export const Users = () => {
+  const { state } = useLocation();
+  console.log(state);
+  const isAdmin = state ? state.isAdmin : false;
   return (
     <SContainer>
       <h2>ユーザー一覧</h2>
       <SearchInput />
       <SUserArea>
         {users.map((user) => (
-          <UserCard key={user.id} user={user} />
+          <UserCard key={user.id} user={user} isAdmin={isAdmin} />
         ))}
       </SUserArea>
     </SContainer>

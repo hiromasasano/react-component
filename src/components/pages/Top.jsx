@@ -5,10 +5,10 @@ import { SecondaryButton } from "../atoms/button/SecondaryButton";
 export const Top = () => {
   const history = useNavigate();
   const onClickAdmin = () => {
-    history({ pathname: "/users", state: { isAdmin: true } });
+    history("/users", { state: { isAdmin: true } });
   };
   const onClickGeneral = () => {
-    history({ pathname: "/users", state: { isAdmin: false } });
+    history("/users", { state: { isAdmin: false } });
   };
   return (
     <SContainer>

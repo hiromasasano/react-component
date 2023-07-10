@@ -24,7 +24,7 @@ const SName = styled.p`
   color: #40514e;
 `;
 const SEdit = styled.span`
-  text-decoreation: underline;
+  text-decoration: underline;
   color: #aaa;
   cursor: pointer;
 `;

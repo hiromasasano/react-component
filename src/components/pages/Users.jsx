@@ -30,7 +30,6 @@ const user = {
 
 export const Users = () => {
   const { state } = useLocation();
-  console.log(state);
   const isAdmin = state ? state.isAdmin : false;
   return (
     <SContainer>

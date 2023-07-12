@@ -5,9 +5,13 @@ import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
 import { DefaultLayout } from "./components/templates/DefaultLayout";
 import { Router } from "./router/Router";
+import { UserProvider } from "./providers/UserProvider";
 import "./styles.css";
 
-
 export default function App() {
-  return <Router />;
+  return (
+    <UserProvider>
+      <Router />
+    </UserProvider>
+  );
 }
